@@ -34,10 +34,10 @@ def integ_sum(func, n, res, a=0, b=1):
 
 def Monte_Carlo_prc(a=0, b=1, n=10000000):
     procs = multiprocessing.cpu_count()
-    # procs - количество ядер, на которых мы можем что-то посчитать
+    # procs - количество возможных потоков
     # ↓ мультипроцессорная очередь с суммами
     res = multiprocessing.Queue()
-    # количество точек на одно ядро
+    # количество точек на один поток
     n = n // procs
     processes = []
     for proc in range(procs):
