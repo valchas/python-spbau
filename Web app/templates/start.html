@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Main page
+{% endblock %}
+
+{% block body %}
+
+
+<div class="p-5 mb-4 bg-light rounded-3">
+
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Germán Reina Carmona</h1>
+        <p class="col-md-8 fs-4"> To be honest, I have no idea what this simple web application can be dedicated to. But
+            yesterday I found a very cool artist (his name is written in the title) who draws in the style of the
+            cartoon adventure time. You can see his profile on Behance :3
+
+        </p>
+        <button class="btn btn-primary btn-lg" type="button"
+                onclick="window.location.href = 'https://www.behance.net/GERMANRC35a26';">
+            Open Behance
+        </button>
+
+
+    </div>
+</div>
+<div class="  row align-items-md-stretch">
+    <div class="  col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <h2>Funny cartoon about a cat</h2>
+            <p>I need to write something here so that everything looks beautiful. I suggest you watch a funny animation
+                about a cat, I hope it will cheer you up while you check my debts</p>
+            <button class="btn btn-outline-light" type="button"
+                    onclick="window.location.href = 'https://www.youtube.com/watch?v=NWeyUpqnKuk';">Barber cat
+            </button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Special offer</h2>
+            <p>Here my site is completely free without SMS and registrations will reduce any of your number by 1. Do not
+                miss this offer!!!!!!</p>
+            <button class="btn btn-outline-secondary" type="button" onclick="window.location.href = '/euler_function';">
+                To try
+            </button>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
