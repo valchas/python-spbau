@@ -187,7 +187,7 @@ while generation < maxgeneration:
               result[i][1])
 
     population = population[:len(population) // 2]
-    # delete last city
+    # удаляем последний город
     for i in range(len(population)):
         population[i] = (population[i])[:-1]
 
